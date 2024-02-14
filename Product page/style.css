@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+main{
+ width: 100vw;
+ /* height: 100vh; */
+ padding: 2rem;
+ margin: 1rem;
+ border: 1px solid black;
+ border-radius: 8px;
+ background-color: rgb(248, 250, 252);
+}
+.product-name h1{
+    font-weight: 300;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+.product-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+}
+
+
+@media screen and (max-width: 1130px) {
+    .product-container{
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+    }
+    .main-img{
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    .small-img{
+        margin-left: 2rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+} 
+
+.main-img{  
+    width: 50%; 
+    margin: 5px 8px;
+    position: relative;
+}
+.main-img span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    padding: 5px 16px;
+    color: #fff;
+    border-radius: 15px 0;
+}
+.main-img img{
+    height: 350px;
+    mix-blend-mode: darken;
+}
+.small-img{
+   /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    align-content: flex-start; 
+}
+.small-img img{
+    height: 50px;
+    border: 1px solid rgb(179, 181, 211);    
+    margin: 0 5px 5px 0;
+    border-radius: 2px;
+    aspect-ratio: 3/2;
+    object-fit: contain;   
+    mix-blend-mode: darken;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.small-img img:hover{
+   box-shadow: 2px 2px 8px rgb(166, 158, 201);
+}
+
+/*   product price  */
+
+.product-description .p1{
+    font-size: 35px;
+    font-weight: 200;
+}
+.product-description .p2{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.product-description .primary-btn{
+    padding: 8px 16px;
+    margin: 5px 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(223, 56, 15);
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 1px;
+    color: #fff;
+    box-shadow: 1px 1px 4px rgb(44, 5, 107);
+}
+
+.product-description form table td:nth-child(2){
+    font-weight: 200;
+    padding-left: 15px;
+}
